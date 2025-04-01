@@ -5,10 +5,10 @@ import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={styles["layout"]}>
-      <div className={styles["content"]}>
+    <div className={styles.layout}>
+      <div className={styles.content}>
         <Sidebar />
-        <main className={styles["main-content"]}>
+        <main className={styles.mainContent}>
           <Feed />
         </main>
         <Rightbar />

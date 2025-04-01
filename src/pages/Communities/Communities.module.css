@@ -1,0 +1,42 @@
+.layout {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.content {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.mainContent {
+  flex: 1;
+  margin: 0 auto;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
+}
+
+.communitiesContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.communitiesList {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0;
+  }
+  
+  .mainContent {
+    max-width: 100%;
+  }
+} 

@@ -5,12 +5,16 @@
     padding: 20px;
     background-color: black;
     border-right: 1px solid #2f3336;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
   }
   
   .sidebar-nav {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex: 1;
   }
   
   .nav-item {
@@ -60,7 +64,7 @@
   }
   
   .profile-section {
-    position: fixed;
+    position: sticky;
     bottom: 20px;
     display: flex;
     align-items: center;
@@ -68,6 +72,7 @@
     border-radius: 22px;
     cursor: pointer;
     transition: background 0.3s ease;
+    background-color: transparent;
   }
   
   .profile-section:hover {
@@ -99,21 +104,9 @@
   }
   
   @media screen and (max-width: 768px) {
-    .profile-section {
-      justify-content: center;
-    }
-  
-    .profile-info {
-      display: none;
-    }
-  
-    .profile-pic {
-      margin-right: 0;
-    }
     .sidebar {
-      position: fixed;
       width: 80px;
-      padding: 20px 10px;
+      padding: 10px;
     }
   
     .nav-link span {
@@ -128,7 +121,21 @@
       justify-content: center;
       padding: 12px;
     }
-    .logo{
-      justify-content:center;
+  
+    .logo {
+      justify-content: center;
+    }
+  
+    .profile-section {
+      justify-content: center;
+      padding: 8px;
+    }
+  
+    .profile-info {
+      display: none;
+    }
+  
+    .profile-pic {
+      margin-right: 0;
     }
   }
